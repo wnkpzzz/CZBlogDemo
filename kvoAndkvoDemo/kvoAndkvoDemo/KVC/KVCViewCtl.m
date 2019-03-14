@@ -25,8 +25,10 @@
    
     self.ani = [[Animal alloc] init];
     [self.ani setValue:@38 forKey:@"age"];
-    NSLog(@"%d",self.ani.age);
-    
+    [self.ani setValue:@40 forKeyPath:@"_age"];
+    NSLog(@"Age的值：%d",self.ani.age);
+    NSLog(@"---------------------------------------------------------");
+
     //    self.ani1 = [[Animal alloc] init];
     //    [self.ani1 setValue:@99 forKeyPath:@"cat.weight"];
     //    NSLog(@"%d",self.ani1.cat.weight);

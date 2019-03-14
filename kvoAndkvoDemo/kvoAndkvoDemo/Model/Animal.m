@@ -16,10 +16,20 @@
     NSLog(@"setAge");
 }
 
+
+- (IMP)imp {
+    return [self methodForSelector:@selector(setAge:)];
+}
+
+- (IMP)classImp {
+    return [self methodForSelector:@selector(class)];
+}
+ 
 - (void)willChangeValueForKey:(NSString *)key{
     [super willChangeValueForKey:key];
     NSLog(@"willChangeValueForKey");
 }
+
 - (void)didChangeValueForKey:(NSString *)key{
     NSLog(@"didChangeValueForKey == begin");
     [super didChangeValueForKey:key];

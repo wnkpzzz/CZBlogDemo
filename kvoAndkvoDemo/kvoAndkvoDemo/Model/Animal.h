@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <objc/runtime.h>
  
 @interface Animal : NSObject
 
 @property (nonatomic,assign) int age; 
+
+@property (nonatomic, assign) IMP imp;
+
+@property (nonatomic, assign) IMP classImp;
 
 @end
 

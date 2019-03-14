@@ -34,10 +34,11 @@
     
     //    [self printMethonNamesFromClass:object_getClass(self.ani)];
     //    NSLog(@"添加KVO之前，Animal的class是 = %s",object_getClassName(self.ani));
-    
+ 
     // 添加键值监听
     [self.ani addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionOld | NSKeyValueObservingOptionNew context:nil];
-    
+ 
+
     
     NSLog(@"添加KVO之后，ani的setAge是 = %p,未添加KVO的ani1的setAge是 = %p",
           [self.ani methodForSelector:@selector(setAge:)],
