@@ -9,7 +9,8 @@
 
 #import "ViewController.h"
 #import "HomeTableViewCell.h"
- 
+#import "TableViewTest.h"
+
 
 // 系统高度
 #define APP_WIDTH                    [[UIScreen mainScreen] bounds].size.width
@@ -35,15 +36,17 @@
     [self initDatas];
     [self initTableView];
     
+
+  
 }
+
 
 - (void)initDatas{
     
     self.navigationItem.title = @"首页";
     self.tableItems = @[
                         @{@"模块一":@[
-                                  @{@"KVO测试":@"KVOViewCtl"},
-                                  @{@"KVC测试":@"KVCViewCtl"}
+                                  @{@"TableView测试":@"TableViewTest"}, 
                                   ]
                           }
                         ];

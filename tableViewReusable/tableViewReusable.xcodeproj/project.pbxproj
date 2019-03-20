@@ -15,6 +15,9 @@
 		ED6867F32241D4F80013DC65 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6867F22241D4F80013DC65 /* main.m */; };
 		ED6867FD2241DB420013DC65 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6867FA2241DB420013DC65 /* HomeTableViewCell.m */; };
 		ED6867FE2241DB420013DC65 /* HomeTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED6867FB2241DB420013DC65 /* HomeTableViewCell.xib */; };
+		ED6868012241DD990013DC65 /* TableViewTest.m in Sources */ = {isa = PBXBuildFile; fileRef = ED6868002241DD990013DC65 /* TableViewTest.m */; };
+		EDAEEBEE2241EDD400652261 /* dataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EDAEEBED2241EDD400652261 /* dataModel.m */; };
+		EDAEEBF022420ED700652261 /* myImg.png in Resources */ = {isa = PBXBuildFile; fileRef = EDAEEBEF22420ED700652261 /* myImg.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +34,11 @@
 		ED6867FA2241DB420013DC65 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
 		ED6867FB2241DB420013DC65 /* HomeTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HomeTableViewCell.xib; sourceTree = "<group>"; };
 		ED6867FC2241DB420013DC65 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		ED6867FF2241DD990013DC65 /* TableViewTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableViewTest.h; sourceTree = "<group>"; };
+		ED6868002241DD990013DC65 /* TableViewTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableViewTest.m; sourceTree = "<group>"; };
+		EDAEEBEC2241EDD400652261 /* dataModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dataModel.h; sourceTree = "<group>"; };
+		EDAEEBED2241EDD400652261 /* dataModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = dataModel.m; sourceTree = "<group>"; };
+		EDAEEBEF22420ED700652261 /* myImg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = myImg.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,7 +75,9 @@
 				ED6867E42241D4F60013DC65 /* AppDelegate.m */,
 				ED6867E62241D4F60013DC65 /* ViewController.h */,
 				ED6867E72241D4F60013DC65 /* ViewController.m */,
+				EDAEEBEF22420ED700652261 /* myImg.png */,
 				ED6867F92241DB420013DC65 /* View */,
+				EDAEEBEB2241EDB400652261 /* TableViewTestDemo */,
 				ED6867E92241D4F60013DC65 /* Main.storyboard */,
 				ED6867EC2241D4F80013DC65 /* Assets.xcassets */,
 				ED6867EE2241D4F80013DC65 /* LaunchScreen.storyboard */,
@@ -80,11 +90,30 @@
 		ED6867F92241DB420013DC65 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				ED6867FC2241DB420013DC65 /* HomeTableViewCell.h */,
 				ED6867FA2241DB420013DC65 /* HomeTableViewCell.m */,
 				ED6867FB2241DB420013DC65 /* HomeTableViewCell.xib */,
-				ED6867FC2241DB420013DC65 /* HomeTableViewCell.h */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		EDAEEBEA2241ECB900652261 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EDAEEBEC2241EDD400652261 /* dataModel.h */,
+				EDAEEBED2241EDD400652261 /* dataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EDAEEBEB2241EDB400652261 /* TableViewTestDemo */ = {
+			isa = PBXGroup;
+			children = (
+				ED6867FF2241DD990013DC65 /* TableViewTest.h */,
+				ED6868002241DD990013DC65 /* TableViewTest.m */,
+				EDAEEBEA2241ECB900652261 /* Model */,
+			);
+			path = TableViewTestDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +175,7 @@
 			files = (
 				ED6867F02241D4F80013DC65 /* LaunchScreen.storyboard in Resources */,
 				ED6867ED2241D4F80013DC65 /* Assets.xcassets in Resources */,
+				EDAEEBF022420ED700652261 /* myImg.png in Resources */,
 				ED6867FE2241DB420013DC65 /* HomeTableViewCell.xib in Resources */,
 				ED6867EB2241D4F60013DC65 /* Main.storyboard in Resources */,
 			);
@@ -159,7 +189,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED6867E82241D4F60013DC65 /* ViewController.m in Sources */,
+				ED6868012241DD990013DC65 /* TableViewTest.m in Sources */,
 				ED6867F32241D4F80013DC65 /* main.m in Sources */,
+				EDAEEBEE2241EDD400652261 /* dataModel.m in Sources */,
 				ED6867FD2241DB420013DC65 /* HomeTableViewCell.m in Sources */,
 				ED6867E52241D4F60013DC65 /* AppDelegate.m in Sources */,
 			);
