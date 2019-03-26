@@ -11,5 +11,7 @@
  
 @interface dataModel : NSObject
 
+@property (nonatomic,copy) NSString * id; 
+
 @end
 
